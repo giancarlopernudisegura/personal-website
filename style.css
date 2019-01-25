@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
 :root {
-  --main-font: Helvetica, Arial, sans-serif;
+  --main-font: 'Open Sans', sans-serif;
 }
 
 body {
   margin: 0 auto;
   padding: 0;
+  min-width: 315px;
   font-family: var(--main-font);
 }
 
@@ -13,7 +16,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   grid-template-areas: 'title menu';
-  height: 50px;
+  min-height: 50px;
   position: relative;
   color: white;
 }
@@ -43,7 +46,6 @@ body {
 
 .navbar .menu a:hover {
   padding: 0 8px;
-  font-size: 14pt;
   color: white;
   text-decoration: underline;
 }
@@ -78,18 +80,22 @@ button[type=button] {
   font-family: var(--main-font);
   border: 2px solid black;
   border-radius: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   cursor: pointer;
   transition: background-color 0.3s;
+  position: relative;
 }
 
 button[type=button]:hover {
-  background-color: #111;
+  background-color: black;
   color: white;
 }
 
 button[type=button]:active {
   background-color: black;
   color: white;
+  box-shadow: 0 0 0 #000;
+  top: 1px;
 }
 
 main {
@@ -98,7 +104,9 @@ main {
 
 .card {
   width: 50%;
-  background-color: rgba(255, 255, 255, 0.4);
+  max-width: 500px;
+  transition: width 0.5s;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 10px auto;
   padding: 20px;
   border-radius: 6px;
@@ -107,12 +115,35 @@ main {
 
 .card p {
   margin: 0;
+  text-indent: 2em;
+  text-align: justify;
 }
 
-@media only screen and (max-width: 745px) {
+.card h2 {
+  margin: 0;
+}
+
+.card ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 1em;
+}
+
+table {
+  margin-left: 2em;
+}
+
+.icon img {
+  width: 1.5em;
+}
+
+.at {
+  color: rgb(18, 87, 144);
+}
+
+@media only screen and (max-width: 750px) {
   .navbar {
     grid-template-areas: 'title''menu';
-    height: 100px;
   }
 
   .navbar .menu {
@@ -124,16 +155,13 @@ main {
   }
 }
 
-@media only screen and (max-width: 403px) {
-  .navbar {
-    height: 140px;
-  }
-
+@media only screen and (max-width: 397px) {
   .navbar .menu a {
     font-size: 12pt;
   }
 
   main .card {
     width: calc(100% - 40px);
+    border-radius: 0;
   }
 }
