@@ -1,0 +1,22 @@
+!!!
+%html{ lang: 'en', dir: 'ltr' }
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ name: 'author', content: 'Giancarlo Pernudi Segura' }
+    %meta{ name: 'description', content: 'My name is Giancarlo Pernudi Segura and this is my personal website where I show off my past and ongoing projects.' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    %title Giancarlo Pernudi Segura
+    = stylesheet_link_tag 'site.css'
+
+  %body
+    #background
+    .navbar
+      .title
+        %h1
+          Giancarlo Pernudi Segura
+      %nav.menu
+        %a{ href: '/' } Home
+        %a{ href: 'https://github.com/giancarlopernudisegura' } GitHub
+        %a{ href: 'https://giancarlopernudisegura.github.io/ww1-cafmap/' } Projects
+        %a{ href: '/contact' } Contact
+    = yield
