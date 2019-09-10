@@ -4,6 +4,11 @@ $main-font: 'Open Sans', sans-serif;
 $small-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 $big-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
+::selection {
+  color: white;
+  background: rgb(206, 10, 157);
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -109,7 +114,7 @@ main {
   width: 65%;
   max-width: 650px;
   transition: width 0.5s;
-  background-color: rgba(30, 30, 30, 0.85);
+  background-color: rgba(35, 35, 35, 0.85);
   margin: 10px auto;
   padding: 20px;
   border-radius: 6px;
@@ -129,6 +134,10 @@ main {
     list-style-type: none;
     margin: 0;
     padding-left: 1em;
+  }
+
+  a, a:visited {
+    color: rgb(206, 10, 157);
   }
 }
 
