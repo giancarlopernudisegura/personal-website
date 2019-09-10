@@ -14,8 +14,9 @@ body {
 
 .navbar {
   display: grid;
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: $big-shadow;
+  background-color: rgba(0, 0, 0, 0);
+  /* box-shadow: $big-shadow; */
+  text-shadow: 0 0 5px black;
   grid-template-areas: 'title menu';
   min-height: 50px;
   position: relative;
@@ -66,7 +67,7 @@ body {
   top: 0;
   min-height: 100vh;
   width: 100%;
-  background-image: url('../images/bg.jpg');
+  background-image: url('../images/background.png');
   background-size: repeat;
   z-index: -1;
 }
@@ -108,7 +109,7 @@ main {
   width: 65%;
   max-width: 650px;
   transition: width 0.5s;
-  background-color: rgba(10, 10, 10, 0.6);
+  background-color: rgba(30, 30, 30, 0.85);
   margin: 10px auto;
   padding: 20px;
   border-radius: 6px;
