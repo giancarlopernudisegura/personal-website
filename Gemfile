@@ -14,3 +14,5 @@ gem 'middleman-cdn'
 gem 'middleman-dotenv'
 gem 'middleman-core', '~> 4.3.5'
 gem "middleman-livereload", "~> 3.4.3"
+gem 'middleman-robots'
+gem 'middleman-search_engine_sitemap'
