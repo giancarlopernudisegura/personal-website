@@ -19,33 +19,33 @@ body {
 }
 
 .navbar {
-  display: grid;
-  background-color: rgba(0, 0, 0, 0);
-  /* box-shadow: $big-shadow; */
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
   text-shadow: 0 0 5px black;
-  grid-template-areas: 'title menu';
   min-height: 50px;
   position: relative;
   color: white;
 
   .title {
-    grid-area: title;
     padding-left: 8px;
 
     h1 {
       margin: inherit;
+      font-size: 2.5em;
     }
   }
 
   .menu {
-    grid-area: menu;
-    line-height: 50px;
-    text-align: right;
-    right: 10px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
 
     a {
       padding: 0 8px;
-      font-size: 14pt;
+      font-size: 1.4rem;
       color: white;
       text-decoration: none;
     }
@@ -96,12 +96,15 @@ button[type=button], .button {
 }
 
 button[type=button]:hover, .button:hover {
-  background-color: black;
+  background-color: $accent;
+  border-color: $accent;
+  text-shadow: $small-shadow;
   color: white;
 }
 
 button[type=button]:active, .button:active {
-  background-color: black;
+  background-color: $accent;
+  filter: brightness(85%);
   color: white;
   box-shadow: 0 0 0 #000;
   top: 1px;
@@ -115,10 +118,11 @@ main {
   width: 65%;
   max-width: 650px;
   transition: width 0.5s;
-  background-color: rgba(35, 35, 35, 0.85);
+  background-color: rgba(32, 33, 39, 0.85);
   margin: 10px auto;
   padding: 20px;
   border-radius: 6px;
+  border: .2px solid rgba(black, 0.2);
   box-shadow: $big-shadow;
 
   p {
@@ -166,7 +170,7 @@ table {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 
   .thumbnail {
     margin: 10px;
@@ -207,17 +211,69 @@ table {
   }
 }
 
-@media only screen and (max-width: 820px) {
+.cv {
+  h2 {
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+  }
+
+  .cv-container {
+    position: relative;
+  }
+
+  p, ul {
+    text-indent: 0;
+    margin: 0 20px;
+  }
+
+  p.cv-title {
+    display: inline;
+    font-weight: bold;
+  }
+  
+  p.cv-date {
+    display: inline;
+    position: absolute;
+    right: 0;
+    font-size: .9rem;
+  }
+
+  ul {
+    list-style-type: symbols(cyclic '◇');
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .navbar .menu a {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
   .navbar {
-    grid-template-areas: 'title''menu';
+    flex-direction: column;
+
+    .title h1 {
+      font-size: 2.2em;
+    }
 
     .menu {
       text-align: left;
+      justify-content: start;
+
+      a {
+        font-size: 1.5rem;
+      }
     }
   }
 
   main .card {
     width: 80%;
+
+    .cv p.cv-date {
+      display: block;
+      position: static;
+    }
   }
 
   .thumbnail {
@@ -232,13 +288,20 @@ table {
 }
 
 
-@media only screen and (max-width: 500px) {
-  .navbar .menu a {
-    font-size: 12pt;
+@media only screen and (max-width: 510px) {
+  .navbar {
+    .title h1 {
+      font-size: 2em;
+    }
+
+    .menu a{
+      font-size: 1.3rem;
+    }
   }
 
   main {
     padding: 0;
+
     .card {
       width: calc(100% - 40px);
       border-radius: 0;
