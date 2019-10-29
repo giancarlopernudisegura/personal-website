@@ -3,23 +3,8 @@
     %p
       This is a collection of some of my top projects I've worked on.
     .array
-      %a.thumbnail{ href: 'https://ualberta-spacebar.github.io/SolarSim/' }
-        = image_tag 'solarsim.png'
-        %p.text
-          SolarSim
-      %a.thumbnail{ href: 'https://giancarlopernudisegura.github.io/ww1-cafmap/' }
-        = image_tag 'ww1-cafmap.png'
-        %p.text
-          WW1 CAFMAP
-      %a.thumbnail{ href: 'https://github.com/giancarlopernudisegura/packingList' }
-        = image_tag 'packingList.png'
-        %p.text
-          Packing List
-      %a.thumbnail{ href: 'https://uais.dev/' }
-        = image_tag 'uais.svg'
-        %p.text
-          UAIS
-      %a.thumbnail{ href: 'https://github.com/willfenton/Identicon' }
-        = image_tag 'identicon.png'
-        %p.text
-          Identicon Generator
+      - data.projects.thumbnails.each do |i|
+        %a.thumbnail{ href: i.link }
+          = image_tag 'thumbnail/' + i.image
+          %p.text
+            = i.text
