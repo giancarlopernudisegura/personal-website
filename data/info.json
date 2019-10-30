@@ -1,0 +1,69 @@
+{
+  "projects": [{
+      "repo": "https://github.com/giancarlopernudisegura/ww1-cafmap",
+      "demo": "https://ualberta-spacebar.github.io/SolarSim/",
+      "image": "solarsim.png",
+      "text": "SolarSim",
+      "tools": ["html",
+        "canvas-html",
+        "css",
+        "sass",
+        "javascript",
+        "jquery"
+      ]
+    },
+    {
+      "demo": "https://uais.dev/",
+      "repo": "https://github.com/UndergraduateArtificialIntelligenceClub/website",
+      "image": "uais.svg",
+      "text": "UAIS",
+      "tools": ["middleman",
+        "haml",
+        "sass",
+        "ruby",
+        "aws-s3",
+        "aws-dynamodb"
+      ]
+    },
+    {
+      "repo": "https://github.com/willfenton/Identicon",
+      "image": "identicon.png",
+      "text": "Identicon Generator",
+      "tools": ["python"]
+    },
+    {
+      "demo": "https://giancarlopernudisegura.github.io/ww1-cafmap/",
+      "repo": "https://github.com/giancarlopernudisegura/ww1-cafmap",
+      "image": "ww1-cafmap.png",
+      "text": "WW1 CAFMAP",
+      "tools": ["html",
+        "canvas-html",
+        "css",
+        "javascript",
+        "d3",
+        "python",
+        "geojson",
+        "mapbox"
+      ]
+    },
+    {
+      "repo": "https://github.com/giancarlopernudisegura/packingList",
+      "image": "packingList.png",
+      "text": "Packing List",
+      "tools": ["python"]
+    }
+  ],
+  "contact": [{
+      "icon": "fab fa-github"
+    },
+    {
+      "icon": "fab fa-linkedin-in"
+    },
+    {
+      "icon": "fas fa-file-pdf"
+    },
+    {
+      "icon": "fas fa-envelope"
+    }
+  ]
+}

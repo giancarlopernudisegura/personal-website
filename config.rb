@@ -4,6 +4,7 @@
 activate :dotenv, env: '.ENV'
 
 set :haml, { :format => :html5 }
+set :sass, { :format => :css }
 # activate :directory_indexes
 activate :livereload
 activate :autoprefixer do |prefix|
