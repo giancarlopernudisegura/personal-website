@@ -27,8 +27,10 @@
         %input{ value: email, disabled: '' }
         %button.close{ onclick: 'document.getElementById("email").classList.add("hide")' }
             %i.fas.fa-times
-        %button#copy{ onclick: 'copy(document.querySelector(".popup#email input"))' }
+        %button#copy{ onclick: 'copy(document.querySelector(".popup#email input")); notify(800)' }
             copy
+        %label.hide
+            copied!
     %a#arrow{ href: '#projects' }
         %i.fas.fa-angle-double-up
 %section#projects
