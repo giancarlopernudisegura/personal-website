@@ -5,12 +5,30 @@
     %h2
         Software Developer
     %h2
-        Army Communication and Information System Specialist
+        Army Communication and Information Systems Specialist
     %ul
-        - data.info.contact.each do |c|
-            %li
-                %a
-                    %i{ class: c.icon}
+        %li
+            %a{ href: 'https://github.com/giancarlopernudisegura/', target: 'blank' }
+                %i.fab.fa-github
+        %li
+            %a{ href: 'https://linkedin.com/in/giancarlo-pernudi-segura-b66a17195/', target: 'blank' }
+                %i.fab.fa-linkedin-in
+        %li
+            %a
+                %i.fas.fa-file-pdf
+                -# Resume
+        %li
+            %a{ onclick: 'document.getElementById("email").classList.remove("hide")' }
+                %i.fas.fa-envelope
+    .popup#email.hide
+        %h3
+            Email
+        - email = 'pernudig@gmail.com'
+        %input{ value: email, disabled: '' }
+        %button.close{ onclick: 'document.getElementById("email").classList.add("hide")' }
+            %i.fas.fa-times
+        %button#copy{ onclick: 'copy(document.querySelector(".popup#email input"))' }
+            copy
     %a#arrow{ href: '#projects' }
         %i.fas.fa-angle-double-up
 %section#projects
@@ -28,10 +46,13 @@
                     = lorem.sentences 5
                 - if proj.demo
                     %a{ href: proj.demo }
+                        %i.fas.fa-eye
                         Live Demo
                 - if proj.repo
                     %a{ href: proj.repo }
+                        %i.fas.fa-code
                         Source Code
                 - else
-                    %a
+                    %a.private
+                        %i.fas.fa-eye-slash
                         Private Code
