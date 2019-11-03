@@ -3,7 +3,7 @@
     %h1
         Giancarlo Pernudi Segura
     %h2
-        Software Developer
+        Software Developer &
     %h2
         Army Communication and Information Systems Specialist
     %ul
@@ -38,9 +38,12 @@
         Projects
     - data.info.projects.each do |proj|
         .card
-            = image_tag 'thumbnail/' + proj.image, alt: 'project thumbnail'
+            = image_tag 'thumbnail/' + proj.image, alt: 'project thumbnail', class: 'hide-sm'
             -# .divider
             .content
+                %h1
+                    = proj.title
+                = image_tag 'thumbnail/' + proj.image, alt: 'project thumbnail', class: 'show-sm'
                 - proj.tools.each do |tool|
                     .tag
                         = '#' + tool

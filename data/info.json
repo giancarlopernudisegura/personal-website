@@ -4,10 +4,10 @@
       "repo": "https://github.com/giancarlopernudisegura/ww1-cafmap",
       "demo": "https://ualberta-spacebar.github.io/SolarSim/",
       "image": "solarsim.png",
-      "text": "SolarSim",
+      "title": "SolarSim",
       "tools": [
         "html",
-        "canvas-html",
+        "html-canvas",
         "css",
         "sass",
         "javascript",
@@ -18,7 +18,7 @@
       "demo": "https://uais.dev/",
       "repo": "https://github.com/UndergraduateArtificialIntelligenceClub/website",
       "image": "uais.svg",
-      "text": "UAIS",
+      "title": "UAIS",
       "tools": [
         "middleman",
         "haml",
@@ -31,7 +31,7 @@
     {
       "repo": "https://github.com/willfenton/Identicon",
       "image": "identicon.png",
-      "text": "Identicon Generator",
+      "title": "Identicon Generator",
       "tools": [
         "python"
       ]
@@ -40,10 +40,10 @@
       "demo": "https://giancarlopernudisegura.github.io/ww1-cafmap/",
       "repo": "https://github.com/giancarlopernudisegura/ww1-cafmap",
       "image": "ww1-cafmap.png",
-      "text": "WW1 CAFMAP",
+      "title": "WW1 CAF Casualties Map",
       "tools": [
         "html",
-        "canvas-html",
+        "html-canvas",
         "css",
         "javascript",
         "d3",
@@ -55,7 +55,7 @@
     {
       "repo": "https://github.com/giancarlopernudisegura/packingList",
       "image": "packingList.png",
-      "text": "Packing List",
+      "title": "Packing List",
       "tools": [
         "python"
       ]
