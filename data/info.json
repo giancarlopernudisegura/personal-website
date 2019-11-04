@@ -5,6 +5,7 @@
       "demo": "https://ualberta-spacebar.github.io/SolarSim/",
       "image": "solarsim.png",
       "title": "SolarSim",
+      "text": "This is a solar system web simulator. Users can create, edit, and delete planets. They can also, change the sun and see how it affects the planets. This was made for the 2019 NASA Space Apps. This was made in collaboration with Will Fenton, Jawad Rizvi, and Dylan Hanna. I worked on the planet physics engine, the front end design.",
       "tools": [
         "html",
         "html-canvas",
@@ -18,7 +19,8 @@
       "demo": "https://uais.dev/",
       "repo": "https://github.com/UndergraduateArtificialIntelligenceClub/website",
       "image": "uais.svg",
-      "title": "UAIS",
+      "title": "UAIS Website",
+      "text": "This was made in middleman and hosted on aws. I have contributed on the majoriy of the front-end. The website uses the aws lambda functions to process form submissions.",
       "tools": [
         "middleman",
         "haml",
@@ -32,8 +34,10 @@
       "repo": "https://github.com/willfenton/Identicon",
       "image": "identicon.png",
       "title": "Identicon Generator",
+      "text": "This Identicon generator uses and pseudo-random hash to to generate images. It takes a hash to plot points on an image, then uses nearest neighbors algorithm on each pixel to give it a random color. The thumbnail for this project was made with the string \"identicon\". This was made in collaboration with Will Fenton.",
       "tools": [
-        "python"
+        "python",
+        "pillow"
       ]
     },
     {
@@ -41,6 +45,7 @@
       "repo": "https://github.com/giancarlopernudisegura/ww1-cafmap",
       "image": "ww1-cafmap.png",
       "title": "WW1 CAF Casualties Map",
+      "text": "This project was made for a data visualization workshop hosted by darkhorse analytics. This is an interactive map that shows the number of deaths per month of WW1 for all the Canadian Army soldiers on each country. This was made in collaboration with Will Fenton. We used a dataset that contained a list of soldiers, their date of death, and burial location, transformed it to a geojson file, and then plotted it on a map. Users can scroll for every month and see the biggest battles for each month.",
       "tools": [
         "html",
         "html-canvas",
@@ -56,6 +61,7 @@
       "repo": "https://github.com/giancarlopernudisegura/packingList",
       "image": "packingList.png",
       "title": "Packing List",
+      "text": "This was a short project. I often need to pack for trips but never know if I've packed everything. The user simply inputs some information about their trip and the program outputs a markdown file. This can be either saved directly to an output file, or it can be piped to another program like pandoc to be converted into another filetype.",
       "tools": [
         "python"
       ]

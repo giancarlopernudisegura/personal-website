@@ -48,13 +48,13 @@
                     .tag
                         = '#' + tool
                 %p
-                    = lorem.sentences 5
+                    = proj.text
                 - if proj.demo
                     %a{ href: proj.demo }
                         %i.fas.fa-eye
                         Live Demo
                 - if proj.repo
-                    %a{ href: proj.repo }
+                    %a{ href: proj.repo, target: 'blank' }
                         %i.fas.fa-code
                         Source Code
                 - else
