@@ -58,6 +58,15 @@
       ]
     },
     {
+      "repo": "https://github.com/giancarlopernudisegura/recorded-shell",
+      "image": "rs.png",
+      "title": "Recorded Shell",
+      "text": "This tool runs a script file as if you were typing the commands on the spot.",
+      "tools": [
+        "c"
+      ]
+    },
+    {
       "repo": "https://github.com/giancarlopernudisegura/packingList",
       "image": "packingList.png",
       "title": "Packing List",
