@@ -5,20 +5,10 @@
     %meta{ name: 'author', content: 'Giancarlo Pernudi Segura' }
     %meta{ name: 'description', content: 'My name is Giancarlo Pernudi Segura and this is my personal website where I show off my past and ongoing projects.' }
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
-    %link{ rel: "icon", type: "image/png", href: "images/favico.png" }
+    %link{ rel: 'icon', type: 'image/png', href: 'images/favico.png' }
+    %link{ rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity: 'sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin: 'anonymous' }
     %title Giancarlo Pernudi Segura
     = stylesheet_link_tag 'site.css'
-    = javascript_include_tag 'site.js'
+    = javascript_include_tag 'site.js', defer: ''
   %body
-    #background
-    .navbar
-      .title
-        %h1
-          Giancarlo Pernudi Segura
-      %nav.menu
-        %a{ href: '/' } Home
-        %a{ href: 'https://github.com/giancarlopernudisegura' } GitHub
-        %a{ href: '/projects' } Projects
-        /%a{ href: '/art' } Art
-        %a{ href: '/contact' } Contact
     = yield
