@@ -39,6 +39,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
+    eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
     excon (0.71.1)
     execjs (2.7.0)
@@ -48,6 +49,7 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.7)
     fastly (1.15.0)
+    ffi (1.11.3)
     ffi (1.11.3-x64-mingw32)
     fog-aws (1.4.1)
       fog-core (~> 1.38)
@@ -185,6 +187,8 @@ GEM
     multipart-post (2.1.1)
     net-http-persistent (2.9.4)
     netrc (0.11.0)
+    nokogiri (1.10.7)
+      mini_portile2 (~> 2.4.0)
     nokogiri (1.10.7-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     padrino-helpers (0.13.3.4)
@@ -202,12 +206,18 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    rest-client (2.0.2)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     rest-client (2.0.2-x64-mingw32)
       ffi (~> 1.9)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     ruby-progressbar (1.10.1)
+    sassc (2.2.1)
+      ffi (~> 1.9)
     sassc (2.2.1-x64-mingw32)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -232,6 +242,7 @@ GEM
     wdm (0.1.1)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
