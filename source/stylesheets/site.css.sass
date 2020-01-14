@@ -98,6 +98,8 @@ button
     position: relative
     padding: 10px 0
     background-color: whitesmoke
+    min-height: 100vh
+    box-sizing: border-box
 
     h1
         text-align: center
@@ -247,8 +249,29 @@ button
         left: 0
         right: 0
 
+.gallery
+    display: flex
+    flex-direction: row-reverse
+    margin: 0 auto
+    width: 100%
+    max-width: 800px
+    justify-content: space-between
+    flex-flow: wrap
+
+    img
+        box-shadow: 0 0 5px #0000000f
+
+    img.logo
+        height: 200px;
+
+    img.poster
+        height: 250px;
+
 .hide
     display: none !important
+
+.center
+    text-align: center
 
 @keyframes arrow-jump
     0%
@@ -265,6 +288,9 @@ button
         h2
             font-size: 1.5rem
 
+    .gallery
+        max-width: 80%
+
 @media only screen and (max-width: 540px)
     .hide-sm
         display: none
@@ -280,6 +306,11 @@ button
             img.show-sm
                 display: block
                 margin: 0 auto .5rem auto
+    
+    .gallery
+        flex-direction: column-reverse
+        align-items: center
+        max-width: 100%
 
 // for people who suffer from motion sickness
 @media (prefers-reduced-motion: reduce)

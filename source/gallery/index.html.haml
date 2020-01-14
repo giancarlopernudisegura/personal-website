@@ -1,0 +1,13 @@
+%section#projects
+    %h1.center
+        Logos
+    .gallery
+        - for i in 1..Dir.glob('source/images/gallery/logo*').length() do
+            %a{ href: '/images/gallery/logo' + i.to_s + '.jpg', target: 'blank' }
+                = image_tag '/images/gallery/logo' + i.to_s + '.jpg', class: 'logo'
+    %h1.center
+        Posters
+    .gallery
+        - for i in 1..Dir.glob('source/images/gallery/poster*').length() do
+            %a{ href: '/images/gallery/poster' + i.to_s + '.jpg', target: 'blank' }
+                = image_tag '/images/gallery/poster' + i.to_s + '.jpg', class: 'poster'
