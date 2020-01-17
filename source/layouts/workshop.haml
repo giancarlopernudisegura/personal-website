@@ -1,0 +1,18 @@
+!!! 5
+%html{ lang: 'en', dir: 'ltr' }
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ name: 'author', content: 'Giancarlo Pernudi Segura' }
+    %meta{ name: 'description', content: 'This contains information for my workshops.' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    %link{ rel: 'icon', type: 'image/png', href: 'images/favico.png' }
+    %link{ rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.8.1/css/all.css', integrity: 'sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf', crossorigin: 'anonymous' }
+    %title
+      = current_page.data.title + ' Workshop'
+    = stylesheet_link_tag 'site.css'
+    = stylesheet_link_tag 'workshop.css'
+  %body
+    %section
+      %h1
+        = current_page.data.title + ' Workshop'
+    = yield
