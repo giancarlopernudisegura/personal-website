@@ -1,0 +1,70 @@
+---
+title: Python
+---
+%section#instructions
+    %h2
+        How to install Python
+    %ul
+        %li
+            %a{ href: '#windows' }
+                Windows
+        %li
+            %a{ href: '#macos' }
+                MacOS
+        %li
+            %a{ href: '#linux' }
+                Linux
+            %ul
+                %li
+                    %a{ href: '#debian' }
+                        Debian/Ubuntu (apt)
+                %li
+                    %a{ href: '#arch' }
+                        Arch/Manjaro (pacman)
+                %li
+                    %a{ href: '#source' }
+                        Source
+    %h3#windows
+        Windows
+    :markdown
+        Go to [python.org](https://www.python.org/downloads/windows/) and follow the instructions.
+        Make sure to add python to PATH
+    %h3#macos
+        MacOS
+    :markdown
+        Go to [python.org](https://www.python.org/downloads/mac-osx/) and follow the instructions.
+
+        If you have homebrew installed, you can run in your terminal:
+    %pre
+        brew install python
+    %h3#linux
+        Linux
+    %h4#debian
+        Debian/Ubuntu
+    %p
+        If you're using Debian, Ubuntu or another similair distro, you already have python installed.
+        If you don't, run in your terminal:
+        %pre
+            sudo apt update
+            sudo apt install python3
+    %h4#arch
+        Arch/Manjaro
+    %p
+        If you're using Manjaro you most likely have it installed.
+        Otherwise, if you're using arch, run in your terminal:
+        %pre
+            sudo pacman -S python
+    %h4#source
+        Source
+    %p
+        Following the instructions from the cpython repo, type the following in your terminal:
+        %pre
+            git clone https://github.com/python/cpython.git
+            cd cpython
+            \./configure
+            make
+            make test
+            sudo make install
+%section#feedback
+    If you've attended the workshop, I would like to get feedback from you.
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuPFlyq3X4W7xA99JJASA3nb7UfTVNVyAL4bBbZmKPHzYMtQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
