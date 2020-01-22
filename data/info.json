@@ -1,7 +1,21 @@
 {
   "projects": [
     {
-      "repo": "https://github.com/giancarlopernudisegura/ww1-cafmap",
+      "repo": "https://github.com/wagonhelm/neuro-car/",
+      "image": "yeetmind.png",
+      "title": "YeetMind (MindOverDrive)",
+      "text": "This project won 3rd place for best project overall at HackED 2020. It also won for best use of hardware. A Muse2 EEG device is used with Fourier transforms to produce a vector of frequencies and amplitudes. This vector is passed into three different SVM classifiers, which have been trained to detect eye state (closed vs open), level of fatigue, as well as if the user is currently focusing on the road. Our classifiers were trained on data collected throughout the night of HackED from willing participants, in an attempt to make our models more generalized. If the classifier determines the user's eyes to be closed, an electric shock is sent to a wirelessly controlled wristband. In addition, our wireless robot car pulls over and stops.<br>I worked on the front end of the web application, the domain routing, and the google-cloud backend for running the website.",
+      "tools": [
+        "html",
+        "react",
+        "python",
+        "c++",
+        "google-cloud",
+        "machine-learning"
+      ]
+    },
+    {
+      "repo": "https://github.com/ualberta-spacebar/SolarSim",
       "demo": "https://ualberta-spacebar.github.io/SolarSim/",
       "image": "solarsim.png",
       "title": "SolarSim",
