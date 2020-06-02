@@ -3,9 +3,7 @@
     %h1
         Giancarlo Pernudi Segura
     %h2
-        Software Developer &
-    %h2
-        Canadian Soldier
+        Software Developer
     %ul
         %li
             %a{ href: 'https://github.com/giancarlopernudisegura/', target: 'blank' }
@@ -18,9 +16,9 @@
                 %i.fas.fa-file-pdf
                 -# Resume
         %li
-            %a{ onclick: 'document.getElementById("email").classList.remove("hide")' }
+            %a{ onclick: 'window.prompt("Copy to clipboard: Ctrl+C, Enter", "pernudig@gmail.com")' }
                 %i.fas.fa-envelope
-    .popup#email.hide
+    -# .popup#email.hide
         %h3
             Email
         - email = 'pernudig@gmail.com'
@@ -46,7 +44,7 @@
                 = image_tag 'thumbnail/' + proj.image, alt: 'project thumbnail', class: 'show-sm'
                 - proj.tools.each do |tool|
                     .tag
-                        = '#' + tool
+                        = tool
                 %p
                     = proj.text
                 - if proj.demo

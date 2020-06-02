@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "repo": "https://github.com/UndergraduateArtificialIntelligenceClub/skin_cancer",
+      "image": "skincancer.png",
+      "title": "Are you smarter than an AI?",
+      "text": "Compare your accuracy in diagnosing skin cancer to a trained image classification model. This was made as a demo for our club (the Undergraduate Artificial Intelligence Society) for an AI in Medicine symposium. We took a pre-trained resnet50 model and fine-tuned it on a skin cancer dataset, then wrote the web app to allow users to compete against it. We used fast.ai as our deep learning library of choice, and Flask for the web app. Made in collaboration with Peter Friedrich and Will Fenton.",
+      "tools": [
+        "html",
+        "css",
+        "flask",
+        "fast.ai",
+        "google-cloud",
+        "machine-learning",
+        "javascript"
+      ]
+    },
+    {
       "repo": "https://github.com/wagonhelm/neuro-car/",
       "image": "yeetmind.png",
       "title": "YeetMind (MindOverDrive)",
