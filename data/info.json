@@ -15,6 +15,18 @@
         "javascript"
       ]
     },
+	{
+	  "repo": "https://github.com/giancarlopernudisegura/today",
+	  "demo": "https://giancarlopernudisegura.github.io/today/",
+	  "image": "today.png",
+	  "title": "Today is",
+	  "text": "Shows all the current daily and monthly celebrations for the current date. Uses fetch-api and the MediaWiki API to query information from Wikipedia.",
+	  "tools": [
+		"html",
+	  	"css",
+		"javascript"
+	  ]
+	},
     {
       "repo": "https://github.com/wagonhelm/neuro-car/",
       "image": "yeetmind.png",
