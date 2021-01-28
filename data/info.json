@@ -1,6 +1,34 @@
 {
   "projects": [
     {
+      "repo": "https://github.com/mseneshen/GUBAbel",
+      "image": "babel-fish.png",
+      "title": "Babel Fish Captions",
+      "text": "HackED 2021 3rd place winner. We were inspired by the pandemic and the fact that we all know have to sit through many online lectures or meetings. For some, this may be more difficult as they may be hearing impaired or may not be a native speaker of the other speaker's language. This application gives the end user a live captioning window with automatic transcription and translation of the desktop audio. Made with Micah Seneshen.",
+      "tools": [
+        "html",
+        "css",
+        "vue",
+        "vuetify",
+        "ffmpeg",
+        "electron",
+        "typescript",
+        "google-cloud"
+      ]
+    },
+    {
+      "repo": "https://github.com/giancarlopernudisegura/adapting-behavior",
+      "image": "adapting-behaviour.png",
+      "title": "Adapting Behavior via Intrinsic Reward: A Survey and Empirical Study Experiment Implementation",
+      "text": "Two notebooks implementing experiments 2 and 3 from a research paper. Made with Yahya Kisana.",
+      "tools": [
+        "python",
+        "jupyter-notebook",
+        "numpy",
+        "matplotlib"
+      ]
+    },
+    {
       "repo": "https://github.com/UndergraduateArtificialIntelligenceClub/skin_cancer",
       "image": "skincancer.png",
       "title": "Are you smarter than an AI?",
@@ -15,18 +43,29 @@
         "javascript"
       ]
     },
-	{
-	  "repo": "https://github.com/giancarlopernudisegura/today",
-	  "demo": "https://giancarlopernudisegura.github.io/today/",
-	  "image": "today.png",
-	  "title": "Today is",
-	  "text": "Shows all the current daily and monthly celebrations for the current date. Uses fetch-api and the MediaWiki API to query information from Wikipedia.",
-	  "tools": [
-		"html",
-	  	"css",
-		"javascript"
-	  ]
-	},
+    {
+      "repo": "https://github.com/giancarlopernudisegura/driver-test-booker",
+      "image": "alberta.png",
+      "title": "Alberta Driver's Test Booker",
+      "text": "Look for available driver tests in Alberta and text you if any tests are found.",
+      "tools": [
+        "puppeteer",
+        "twilio",
+        "javascript"
+      ]
+    },
+    {
+      "repo": "https://github.com/giancarlopernudisegura/today",
+      "demo": "https://giancarlopernudisegura.github.io/today/",
+      "image": "today.png",
+      "title": "Today is",
+      "text": "Shows all the current daily and monthly celebrations for the current date. Uses fetch-api and the MediaWiki API to query information from Wikipedia.",
+      "tools": [
+        "html",
+        "css",
+        "javascript"
+      ]
+    },
     {
       "repo": "https://github.com/wagonhelm/neuro-car/",
       "image": "yeetmind.png",
